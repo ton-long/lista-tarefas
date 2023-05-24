@@ -5,22 +5,79 @@ body{
     background: white url('../imagens/fundo.jpg') left center no-repeat fixed;
     background-size: cover;  
     color: rgb(0, 65, 87);
-    font-family: Arial, Helvetica, sans-serif;  
+    font-family: Arial, Helvetica, sans-serif; 
+    
 }
 main{         
     padding-top: 20px;    
     text-align: center;
-    font-size: 0.8em;        
+    font-size: 0.8em;         
 }   
-main > input[type=text]{
-    height: 25px;
+main > input[type=text]{    
+    height: 26px;
     width: 200px;
     margin: 2px;
+    border: 1px solid rgba(0, 65, 87, 0.795);
+}
+main > input[type=text]:focus{
+    outline: none;
 }
 main > input[type=button]{
     height: 31px;
-    width: 31px;    
+    width: 31px;  
+    transition: 0.3s;  
+    cursor: pointer;
+}
+main > input[type=button]:hover{
+    background-color: rgb(0, 65, 87);
+    color: white;
+}
+div{
+    width: 95vw;
 }
 ul{
     list-style-type: none;
+}
+
+li{    
+    display: flex;
+    background-color: white;
+    border: 1px solid rgb(0, 65, 87);
+    max-height: max-content;    
+    max-width: max-content;
+    margin-left: auto;    
+    margin-right: auto;       
+    align-items: baseline;
+    
+}
+p{
+    margin:0px 10px;
+    font-size: 1.1em;        
+    flex-grow: 1;  
+    align-self: center;  
+}
+#btn1{       
+    width: 33px;
+    height: 33px;    
+    font-weight: bolder; 
+    transition: 0.3s;  
+    cursor: pointer;
+    align-self: center;
+    
+}
+#btn1:hover{
+    background-color: rgba(0, 163, 0, 0.74);
+    color: white;
+}
+#btn2{     
+    width: 33px;
+    height: 33px;
+    font-size: 1.4em;  
+    transition: 0.3s;  
+    cursor: pointer; 
+    align-self: center;     
+}
+#btn2:hover{
+    background-color: rgba(255, 0, 0, 0.74);
+    color: white;    
 }
