@@ -79,6 +79,7 @@ p{
 #btn2{     
     width: 33px;
     height: 33px;
+    color: red; 
     font-size: 1.4em;  
     transition: 0.3s;  
     cursor: pointer; 
