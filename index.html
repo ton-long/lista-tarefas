@@ -12,12 +12,14 @@
     <main id="main">
         <h1>Escolha sua próxima tarefa.</h1>
         <input type="text" name="tarefa" id="tarefa" placeholder="Adicionar tarefa!" autocomplete="off">
-        <input type="button" value="+" id="adicionar">        
+        <input type="button" value="+" id="adicionar" onclick="adicionar()">        
         <h2>Suas tarefas:</h2>
         <div id="listas">
-            <ul>
-                <li class="novaLista mostrando">
-                     <p>Lorem ipsum </p><input type="button" value="&#x1F5F8" id="btn1"> <input type="button" value="x" id="btn2">
+            <ul class="colocandoLista">
+                <li class="novaLista mostrando feito">
+                     <p class="texto"></p>
+                     <input type="button" value="🗸" id="btn1">
+                     <input type="button" value="x" id="btn2">
                 </li>
             </ul>
         </div>
